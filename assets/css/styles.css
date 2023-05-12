@@ -151,7 +151,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--first-color-second);
 }
 
 /*==================== NAV ====================*/
@@ -769,7 +769,10 @@ img {
   justify-self: flex-end;
 }
 
-@media screen and (min-width:768px) {
-  
+@media screen and (max-width:768px) {
+  .footer__container{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 /* For large devices */
