@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinosn Avellaneda</title>
 
     <!--==================== UNICONS ====================-->
-
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+    <!--==================== Fav-Icon ====================-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="">
+
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>portafolio Edinson Avellaneda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="assets/img/logo.png" alt=""></a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Inicio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user-circle nav__icon"></i> Sobre Mi
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Habilidades
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-comment-add nav__icon"></i> Hablame
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-bars"></i>
+    <div class="container">
+        <!--==================== Header ====================-->
+
+        <header class="header" id="header">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#inicio">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-theme="dark" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-light" href="#about">Sobre Mi</a>
+                            <a class="nav-link text-light" href="#skills">Habilidades</a>
+                            <a class="nav-link text-light" href="#portfolio">Proyectos</a>
+                            <a class="nav-link text-light" href="#contact">Contactame</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </div>
 
-    <!--==================== MAIN ====================-->
+
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section" id="inicio">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -80,7 +72,7 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
 
-                                <image class="home__blob-img" x="12" y="" xlink:href="assets/img/perfil.png" />
+                                <image class="home__blob-img" x="12" xlink:href="assets/img/perfil.png" />
                             </g>
                         </svg>
                     </div>
@@ -116,7 +108,7 @@
 
             <div class="about__container container grid">
                 <div class="about img">
-                    <img src="assets/img/about.jpg" alt="img2" id="img2">
+                    <img src="assets/img/Imagen_Escritorio.png" alt="img2" id="img2">
                 </div>
 
 
@@ -155,7 +147,7 @@
                         </div>
                     </div>
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/PROYECTO WEB PARA PORTAFOLIO DE DESARROLLADOR WEB.docx"
+                        <a download="CV_Edinson-Avellaneda" href="assets/pdf/CV_Edinson-Avellaneda.pdf"
                             class="button button--flex">
                             Descarga mi curriculum<i class="uil uil-file-download button__icon"></i>
                         </a>
@@ -177,7 +169,6 @@
                             <div>
                                 <h1 class="skills__title">Manejo</h1>
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
                         <div class="skills__list grid">
                             <div class="skills__data">
@@ -188,6 +179,26 @@
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="devicon-plain--java skills__icon"></i>
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="uil simple-icons--springboot skills__icon"></i>
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Spring Boot</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__springBoot"></span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -226,136 +237,95 @@
             </div>
         </section>
 
+        <!--==================== Portfolio ====================-->
+        <section class="portfolio section" id="portfolio">
 
-        <!--            
+            <h2 class="section__title">Portafolio</h2>
+            <span class="section__subtitle">Mi Más Reciente Proyecto</span>
 
-<section class="qualification section">
-
-</section>
-
-
-<section class="services section" id="services">
-    
-</section>
-
-
-<section class="portfolio section" id="portfolio">
-    
-</section>
-
-
-<section class="project section">
-
-</section>
-
-
-<section class="testimonial section">
-    
-</section>
--->
-
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contactame</h2>
-            <span class="section__subtitle">Ponte en contacto</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Llámame</h3>
-                            <span class="contact__subtitle">(+57)315 83216 07</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">avellanedaedinson74@gamil.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-pin-alt contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Localizame</h3>
-                            <span class="contact__subtitle">Colombia - Málaga</span>
+            <div class="portfolio__container container swiper-container">
+                <div class="content-aling-center">
+                    <!--==================== Portfolio1 ====================-->
+                    <div class="card mb-3">
+                        <img src="assets/img/Proycto_Agropecuaria.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto SGI Agropecuaria</h5>
+                            <p class="card-text">Desarrolle un SGI(Sistema de Gestion de Inventarios) diseñado para
+                                una Agropecuaria/Veterinaria.
+                            </p>
+                            <a href="https://github.com/FaiberAbril/agropecuaria/tree/desarrollo"
+                                class="button button--flex button--small portfolio--button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <form action="" class="contact__form grid"></form>
-                <div class="contact__inputs grid">
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Projecto</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Mensaje</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
 
+                <!--==================== Add Arrows ====================-->
+                <div class="swpier-button-next"></div>
+                <div class="swpier-button-prev"></div>
+
+                <!--==================== Add Pagination ====================-->
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+
+        </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container containr grid">
                     <div>
-                        <a href="#" class="button button--flex">
-                            Enviar
-                            <i class="uil uil-message button__icon"></i>
+                        <h1 class="footer__title">Jair</h1>
+                        <span class="footer__subtitle">Desarrollador Backend</span>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#about" class="footer__links">Sobre Mi</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer__links">Contactame</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/liljaquir/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+    
+                        <a href="https://www.facebook.com/profile.php?id=100014178944587" target="_blank"
+                            class="footer__social">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+    
+                        <a href="https://github.com/LilJaquir" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
                         </a>
                     </div>
-        </section>
+                </div>
+                <p class="footer__copy">&#169; LilJaquir.<br> Todos los derechos reservados</p>
+            </div>
+        </footer>
+
     </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container containr grid">
-                <div>
-                    <h1 class="footer__title">Jair</h1>
-                    <span class="footer__subtitle">Desarrollador Backend</span>
-                </div>
-                <ul class="footer__links">
-                    <li>
-                        <a href="#about" class="footer__links">Sobre Mi</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__links">Contactame</a>
-                    </li>
-                </ul>
-                <div class="footer__socials">
-                    <a href="https://www.instagram.com/liljaquir/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram-alt"></i>
-                    </a>
 
-                    <a href="https://www.facebook.com/profile.php?id=100014178944587" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-facebook"></i>
-                    </a>
+    <!--==================== JsPopper ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-                    <a href="https://github.com/LilJaquir" target="_blank" class="footer__social">
-                        <i class="uil uil-github"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="footer__copy">&#169; LilJaquir.<br> Todos los derechos reservados</p>
-        </div>
-    </footer>
+    <!--==================== JsBootsTrap ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 
-
-
-    <!--==================== SWIPER JS ====================-->
+    <!--==================== JsMAIN ====================-->
+    <script src="assets/js/main.js"></script>
+    <!--==================== JsSWIPER ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
